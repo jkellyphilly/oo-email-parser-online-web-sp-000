@@ -11,6 +11,7 @@ class EmailAddressParser
 
   # Define the parser method
   def parse
-    emails = @email_list.split(/\w+@\w+.\w+/)
+    @email_list.chomp!
+    
   end
 end
